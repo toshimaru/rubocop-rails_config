@@ -1,7 +1,7 @@
 # RuboCop Rails
 
-[![Build Status](https://travis-ci.org/toshimaru/rubocop-rails.svg?branch=master)](https://travis-ci.org/toshimaru/rubocop-rails)
-[![Gem Version](https://badge.fury.io/rb/rubocop-rails.svg)](https://badge.fury.io/rb/rubocop-rails)
+[![Build Status](https://travis-ci.org/toshimaru/rubocop-rails_config.svg?branch=master)](https://travis-ci.org/toshimaru/rubocop-rails_config)
+[![Gem Version](https://badge.fury.io/rb/rubocop-rails_config.svg)](https://badge.fury.io/rb/rubocop-rails_config)
 
 RuboCop configuration which has the same code style checking as official Ruby on Rails.
 
@@ -12,7 +12,7 @@ RuboCop configuration which has the same code style checking as official Ruby on
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem "rubocop-rails"
+gem "rubocop-rails_config"
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Add this line to your application's `.rubocop.yml`, or just run `rails generate 
 
 ```yml
 inherit_gem:
-  rubocop-rails:
+  rubocop-rails_config:
     - config/rails.yml
 ```
 
@@ -33,7 +33,7 @@ For example, if you want to change `TargetRubyVersion`, you can do it like:
 
 ```yml
 inherit_gem:
-  rubocop-rails:
+  rubocop-rails_config:
     - config/rails.yml
 
 AllCops:
