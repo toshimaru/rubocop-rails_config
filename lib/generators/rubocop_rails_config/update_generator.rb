@@ -10,7 +10,7 @@ module RubocopRailsConfig
 
       def update_config_file
         if old_gem_name_used?
-          gsub_file config_file_path, 'rubocop-rails:', 'rubocop-rails_config:'
+          gsub_file config_file_path, "rubocop-rails:", "rubocop-rails_config:"
         else
           puts "Your conifg is up-to-date. Nothing to update."
         end
