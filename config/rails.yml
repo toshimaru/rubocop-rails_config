@@ -17,6 +17,11 @@ CustomCops/RefuteNot:
   Include:
     - '**/test/**/*'
 
+# Prefer assert_not over assert !
+CustomCops/AssertNot:
+  Include:
+    - '**/test/**/*'
+
 # Prefer &&/|| over and/or.
 Style/AndOr:
   Enabled: true

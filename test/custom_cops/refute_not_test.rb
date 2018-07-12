@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "support/cop_helper"
-require "./lib/custom_cops"
+require "custom_cops/refute_not"
 
 class RefuteNotTest < ActiveSupport::TestCase
   include CopHelper
