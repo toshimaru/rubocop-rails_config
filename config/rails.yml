@@ -11,6 +11,9 @@ AllCops:
     - '**/vendor/**/.*'
     - '**/node_modules/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
+    # Additional exclude files by rubocop-rails_config
+    - 'db/migrate/**/*.rb'
+    - 'db/*.rb'
 
 # Prefer assert_not_x over refute_x
 CustomCops/RefuteNot:
@@ -125,8 +128,6 @@ Style/FrozenStringLiteralComment:
     - 'actionpack/test/**/*.builder'
     - 'actionpack/test/**/*.ruby'
     - 'activestorage/db/migrate/**/*.rb'
-    - 'db/migrate/**/*.rb'
-    - 'db/*.rb'
 
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
