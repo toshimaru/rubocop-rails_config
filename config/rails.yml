@@ -21,7 +21,7 @@ CustomCops/RefuteNot:
     - '**/test/**/*'
 
 # Prefer assert_not over assert !
-CustomCops/AssertNot:
+Rails/AssertNot:
   Include:
     - '**/test/**/*'
 
