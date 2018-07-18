@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CustomCops
+module Rails
   # Enforces the use of `assert_not` over `assert !`.
   #
   # @example
