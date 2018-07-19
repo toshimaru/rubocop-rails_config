@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 appraise "rubocop-0.53" do
   gem "rubocop", "~> 0.53"
 end
