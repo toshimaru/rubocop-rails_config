@@ -8,3 +8,11 @@ rvm:
   - 2.3.7
   - 2.4.4
   - 2.5.1
+# Put this in your .travis.yml
+gemfile:
+  - gemfiles/rubocop_0.53.gemfile
+  - gemfiles/rubocop_0.54.gemfile
+  - gemfiles/rubocop_0.55.gemfile
+  - gemfiles/rubocop_0.56.gemfile
+  - gemfiles/rubocop_0.57.gemfile
+  - gemfiles/rubocop_0.58.gemfile
