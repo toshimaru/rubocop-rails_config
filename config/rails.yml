@@ -1,5 +1,3 @@
-require: custom_cops
-
 AllCops:
   TargetRubyVersion: 2.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
@@ -15,13 +13,16 @@ AllCops:
     - 'db/migrate/**/*.rb'
     - 'db/*.rb'
 
-# Prefer assert_not_x over refute_x
-CustomCops/RefuteNot:
+Rails:
+  Enabled: true
+
+# Prefer assert_not over assert !
+Rails/AssertNot:
   Include:
     - '**/test/**/*'
 
-# Prefer assert_not over assert !
-CustomCops/AssertNot:
+# Prefer assert_not_x over refute_x
+Rails/RefuteMethods:
   Include:
     - '**/test/**/*'
 
