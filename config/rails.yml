@@ -15,13 +15,16 @@ AllCops:
     - 'db/migrate/**/*.rb'
     - 'db/*.rb'
 
-# Prefer assert_not_x over refute_x
-CustomCops/RefuteNot:
+Rails:
+  Enabled: true
+
+# Prefer assert_not over assert !
+Rails/AssertNot:
   Include:
     - '**/test/**/*'
 
-# Prefer assert_not over assert !
-CustomCops/AssertNot:
+# Prefer assert_not_x over refute_x
+Rails/RefuteMethods:
   Include:
     - '**/test/**/*'
 
