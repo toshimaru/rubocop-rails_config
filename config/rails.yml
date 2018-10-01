@@ -130,6 +130,9 @@ Style/FrozenStringLiteralComment:
     - 'actionpack/test/**/*.ruby'
     - 'activestorage/db/migrate/**/*.rb'
 
+Style/RedundantFreeze:
+  Enabled: true
+
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
   Enabled: true
