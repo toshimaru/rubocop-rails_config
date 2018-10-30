@@ -2,6 +2,6 @@
 
 source "https://rubygems.org"
 
-gem "rubocop", "~> 0.57"
+gem "rubocop", "~> 0.60"
 
 gemspec path: "../"
