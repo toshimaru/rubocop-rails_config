@@ -13,6 +13,10 @@ AllCops:
     - 'db/migrate/**/*.rb'
     - 'db/*.rb'
 
+Performance:
+  Exclude:
+    - '**/test/**/*'
+
 Rails:
   Enabled: true
 
