@@ -6,12 +6,16 @@ AllCops:
   Exclude:
     - '**/templates/**/*'
     - '**/vendor/**/*'
-    - '**/vendor/**/.*'
-    - '**/node_modules/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
+    - 'railties/test/fixtures/tmp/**/*'
+    - 'node_modules/**/*'
     # Additional exclude files by rubocop-rails_config
     - 'db/migrate/**/*.rb'
     - 'db/*.rb'
+
+Performance:
+  Exclude:
+    - '**/test/**/*'
 
 Rails:
   Enabled: true
@@ -132,6 +136,9 @@ Style/FrozenStringLiteralComment:
 
 Style/RedundantFreeze:
   Enabled: true
+  Exclude:
+    - 'actionpack/lib/action_dispatch/journey/router/utils.rb'
+    - 'activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb'
 
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
@@ -140,6 +147,7 @@ Layout/SpaceBeforeBlockBraces:
 # Use `foo { bar }` not `foo {bar}`.
 Layout/SpaceInsideBlockBraces:
   Enabled: true
+  EnforcedStyleForEmptyBraces: space
 
 # Use `{ a: 1 }` not `{a:1}`.
 Layout/SpaceInsideHashLiteralBraces:
