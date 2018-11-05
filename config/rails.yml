@@ -12,10 +12,9 @@ AllCops:
     # rubocop default exclude
     - '.git/**/*'
     # Additional exclude files by rubocop-rails_config
-    - 'bin/*'
-    - 'config/initializers/*.rb'
-    - 'db/*.rb'
-    - 'db/migrate/**/*.rb'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
 
 Performance:
   Exclude:
