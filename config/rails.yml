@@ -10,12 +10,12 @@ AllCops:
     - 'railties/test/fixtures/tmp/**/*'
     - 'node_modules/**/*'
     # rubocop default exclude
-    - 'node_modules/**/*'
-    - 'vendor/**/*'
     - '.git/**/*'
     # Additional exclude files by rubocop-rails_config
-    - 'db/migrate/**/*.rb'
+    - 'bin/*'
+    - 'config/initializers/*.rb'
     - 'db/*.rb'
+    - 'db/migrate/**/*.rb'
 
 Performance:
   Exclude:
