@@ -105,6 +105,9 @@ Layout/SpaceAfterColon:
 Layout/SpaceAfterComma:
   Enabled: true
 
+Layout/SpaceAfterSemicolon:
+  Enabled: true
+
 Layout/SpaceAroundEqualsInParameterDefault:
   Enabled: true
 
