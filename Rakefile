@@ -12,4 +12,14 @@ end
 
 RuboCop::RakeTask.new
 
+task :rails_test do
+  RAILS_TEST_DIR = "rails_test"
+
+  sh "rails new #{RAILS_TEST_DIR}"
+  cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
+  cd RAILS_TEST_DIR do
+    sh "rubocop --format tap --except=Style/StringLiterals,Style/FrozenStringLiteralComment ."
+  end
+end
+
 task default: [:test, :rubocop]
