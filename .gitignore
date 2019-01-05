@@ -9,3 +9,5 @@
 /tmp/
 /gemfiles/.bundle/
 *.gemfile.lock
+
+/rails_test
