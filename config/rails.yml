@@ -9,8 +9,6 @@ AllCops:
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
     - 'railties/test/fixtures/tmp/**/*'
     - 'node_modules/**/*'
-    # rubocop default exclude
-    - '.git/**/*'
     # Additional exclude files by rubocop-rails_config
     - 'bin/**/*'
     - 'config/**/*'
