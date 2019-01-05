@@ -18,8 +18,11 @@ task :rails_test do
   sh "rails new #{RAILS_TEST_DIR}"
   cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
   cd RAILS_TEST_DIR do
+    # NOTE: rails generates files which have rubocop
+    # offences(StringLiterals, FrozenStringLiteralComment).
+    # Run rubocop except those rulese.
     sh "rubocop --format tap --except=Style/StringLiterals,Style/FrozenStringLiteralComment ."
   end
 end
 
-task default: [:test, :rubocop]
+task default: [:test, :rubocop, :rails_test]
