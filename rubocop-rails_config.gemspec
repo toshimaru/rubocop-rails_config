@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version               = "0.4.3"
   spec.summary               = "RuboCop configuration which has the same code style checking as official Ruby on Rails"
   spec.description           = "RuboCop configuration which has the same code style checking as official Ruby on Rails"
-  spec.authors               = "Toshimaru"
+  spec.authors               = ["Toshimaru", "Koichi ITO"]
   spec.email                 = "me@toshimaru.net"
   spec.files                 = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
   spec.homepage              = "https://github.com/toshimaru/rubocop-rails_config"
