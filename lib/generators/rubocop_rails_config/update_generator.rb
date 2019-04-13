@@ -12,7 +12,7 @@ module RubocopRailsConfig
         if old_gem_name_used?
           gsub_file config_file_path, "rubocop-rails:", "rubocop-rails_config:"
         else
-          puts "Your conifg is up-to-date. Nothing to update."
+          puts "Your config is up-to-date. Nothing to update."
         end
       end
 
