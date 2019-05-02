@@ -79,7 +79,10 @@ Layout/EmptyLinesAroundModuleBody:
 
 Layout/IndentFirstArgument:
   Enabled: true
-
+  
+Layout/IndentFirstParameter:
+  Enabled: true
+  
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
   Enabled: true
