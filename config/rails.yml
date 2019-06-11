@@ -1,5 +1,9 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.5
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
   DisabledByDefault: true
@@ -8,18 +12,13 @@ AllCops:
     - '**/vendor/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
     - 'railties/test/fixtures/tmp/**/*'
-    - 'node_modules/**/*'
-    # Additional exclude files by rubocop-rails_config
-    - 'bin/**/*'
-    - 'config/**/*'
-    - 'db/**/*'
+    - 'actionmailbox/test/dummy/**/*'
+    - 'actiontext/test/dummy/**/*'
+    - '**/node_modules/**/*'
 
 Performance:
   Exclude:
     - '**/test/**/*'
-
-Rails:
-  Enabled: true
 
 # Prefer assert_not over assert !
 Rails/AssertNot:
@@ -116,13 +115,13 @@ Layout/SpaceAroundOperators:
   Enabled: true
 
 Layout/SpaceBeforeComma:
-    Enabled: true
+  Enabled: true
 
 Layout/SpaceBeforeComment:
   Enabled: true
 
 Layout/SpaceBeforeFirstArg:
-    Enabled: true
+  Enabled: true
 
 Style/DefWithParentheses:
   Enabled: true
@@ -140,12 +139,12 @@ Style/FrozenStringLiteralComment:
     - 'actionpack/test/**/*.builder'
     - 'actionpack/test/**/*.ruby'
     - 'activestorage/db/migrate/**/*.rb'
+    - 'activestorage/db/update_migrate/**/*.rb'
+    - 'actionmailbox/db/migrate/**/*.rb'
+    - 'actiontext/db/migrate/**/*.rb'
 
 Style/RedundantFreeze:
   Enabled: true
-  Exclude:
-    - 'actionpack/lib/action_dispatch/journey/router/utils.rb'
-    - 'activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb'
 
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
