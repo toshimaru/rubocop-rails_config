@@ -5,9 +5,9 @@ before_install:
   - gem install bundler || gem install bundler -v 1.17.3
 rvm:
   - 2.3.7
-  - 2.4.4
-  - 2.5.1
-  - 2.6.2
+  - 2.4.6
+  - 2.5.5
+  - 2.6.3
 # Put this in your .travis.yml
 gemfile:
   - gemfiles/rubocop_0.70.gemfile
