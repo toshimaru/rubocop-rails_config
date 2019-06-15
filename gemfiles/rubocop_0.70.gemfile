@@ -4,7 +4,7 @@
 
 source "https://rubygems.org"
 
-gem "rubocop", "~> 0.65"
+gem "rubocop", "~> 0.70"
 gem "rails"
 
 gemspec path: "../"
