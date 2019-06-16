@@ -17,7 +17,6 @@ module RubocopRailsConfig
       end
 
     private
-
       # rubocop-rails is renamed to rubocop-rails_config
       def old_gem_name_used?
         File.foreach(config_file_path).grep(/\s+rubocop-rails:/).any?
