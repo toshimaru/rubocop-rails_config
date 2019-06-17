@@ -15,6 +15,9 @@ AllCops:
     - 'actionmailbox/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
 
 Performance:
   Exclude:
