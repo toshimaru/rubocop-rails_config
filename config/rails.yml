@@ -15,6 +15,7 @@ AllCops:
     - 'actionmailbox/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
+    # Additional exclude files by rubocop-rails_config
     - 'bin/**/*'
     - 'config/**/*'
     - 'db/**/*'
