@@ -40,7 +40,7 @@ If you'd like to change `TargetRubyVersion`, see [Customization](#customization)
 | `Rails/AssertNot`     | Prefer assert_not over assert |
 | `Rails/RefuteMethods` | Prefer assert_not_x over refute_x |
 
-`assert_not` and `assert_not_xxx` methods are Rails assertion extension, so if you want to use these methods, please inherit `ActiveSupport::TestCase`.
+`assert_not` and `assert_not_xxx` methods are Rails assertion extension, so if you want to use these methods, require `activesupport` gem and inherit `ActiveSupport::TestCase`.
 
 ```rb
 class AssertNotTest < ActiveSupport::TestCase
