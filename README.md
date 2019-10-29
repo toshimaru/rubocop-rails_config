@@ -25,6 +25,14 @@ inherit_gem:
     - config/rails.yml
 ```
 
+## Configuration
+
+### TargetRubyVersion
+
+Although Rails only supports Ruby 2.5 or more, rubocop-rails_config still supports Ruby 2.3 to support as many Ruby versions as possible.
+
+If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
+
 ## Customization
 
 If you'd like to customize the rubocop setting, you can override it.
