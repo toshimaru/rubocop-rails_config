@@ -33,6 +33,23 @@ Although Rails only supports Ruby 2.5 or more, rubocop-rails_config still suppor
 
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
+### Rails/AssertNot, Rails/RefuteMethods
+
+| cop | description |
+| --- | --- |
+| `Rails/AssertNot`     | Prefer assert_not over assert |
+| `Rails/RefuteMethods` | Prefer assert_not_x over refute_x |
+
+`assert_not` and `assert_not_xxx` methods are Rails assertion extension, so if you want to use these methods, please inherit `ActiveSupport::TestCase`.
+
+```rb
+class AssertNotTest < ActiveSupport::TestCase
+  def test_assert_not_method
+    assert_not ...(snip)...
+  end
+end
+```
+
 ## Customization
 
 If you'd like to customize the rubocop setting, you can override it.
