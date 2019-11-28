@@ -11,4 +11,3 @@ rvm:
 # Put this in your .travis.yml
 gemfile:
   - gemfiles/rubocop_0.77.gemfile
-  - gemfiles/rubocop_0.x.gemfile
