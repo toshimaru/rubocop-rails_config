@@ -35,7 +35,7 @@ $ rails generate rubocop_rails_config:install
 
 ### TargetRubyVersion
 
-Although Rails 6 only supports Ruby 2.5 or more, rubocop-rails_config still supports Ruby 2.3 or more to support as many Ruby versions as possible.
+Although Rails 6 only supports Ruby 2.5 or more, rubocop-rails_config still supports Ruby 2.4 or more to support as many Ruby versions as possible.
 
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
