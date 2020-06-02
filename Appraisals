@@ -14,3 +14,8 @@ appraise "rubocop-0.84" do
   gem "rubocop", "~> 0.84.0"
   gem "rails"
 end
+
+appraise "rubocop-0.85" do
+  gem "rubocop", "~> 0.84.0"
+  gem "rails"
+end
