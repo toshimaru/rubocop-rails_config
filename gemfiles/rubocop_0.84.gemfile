@@ -5,6 +5,5 @@
 source "https://rubygems.org"
 
 gem "rubocop", "~> 0.84.0"
-gem "rails"
 
 gemspec path: "../"
