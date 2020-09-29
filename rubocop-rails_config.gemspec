@@ -12,14 +12,8 @@ Gem::Specification.new do |spec|
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.add_dependency "rubocop", "~> 0.82"
+  spec.add_dependency "rubocop", "~> 0.85"
   spec.add_dependency "rubocop-performance", "~> 1.3"
   spec.add_dependency "rubocop-rails", "~> 2.0"
   spec.add_dependency "railties", ">= 5.0"
-
-  spec.add_development_dependency "appraisal"
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rails", ">= 5.0"
 end

@@ -1,18 +1,17 @@
-sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.4.6
-  - 2.5.5
-  - 2.6.3
+  - 2.4.10
+  - 2.5.8
+  - 2.6.6
   - 2.7.1
 # Put this in your .travis.yml
 gemfile:
-  - gemfiles/rubocop_0.82.gemfile
-  - gemfiles/rubocop_0.83.gemfile
-  - gemfiles/rubocop_0.84.gemfile
   - gemfiles/rubocop_0.85.gemfile
   - gemfiles/rubocop_0.86.gemfile
   - gemfiles/rubocop_0.87.gemfile
   - gemfiles/rubocop_0.88.gemfile
   - gemfiles/rubocop_0.89.gemfile
+  - gemfiles/rubocop_0.90.gemfile
+  - gemfiles/rubocop_0.91.gemfile
+  - gemfiles/rubocop_0.92.gemfile
