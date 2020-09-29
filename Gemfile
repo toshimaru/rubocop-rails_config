@@ -3,3 +3,9 @@
 source "https://rubygems.org"
 
 gemspec
+
+gem "appraisal"
+gem "bundler"
+gem "minitest"
+gem "rake"
+gem "rails", ">= 5.0"
