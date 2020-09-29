@@ -12,3 +12,6 @@ gemfile:
   - gemfiles/rubocop_0.87.gemfile
   - gemfiles/rubocop_0.88.gemfile
   - gemfiles/rubocop_0.89.gemfile
+  - gemfiles/rubocop_0.90.gemfile
+  - gemfiles/rubocop_0.91.gemfile
+  - gemfiles/rubocop_0.92.gemfile
