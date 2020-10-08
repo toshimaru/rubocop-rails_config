@@ -1,4 +1,5 @@
 require:
+  # - rubocop-packaging # Disabled since it requires rubocop v0.89+
   - rubocop-performance
   - rubocop-rails
 
@@ -13,7 +14,6 @@ AllCops:
     - '**/templates/**/*'
     - '**/vendor/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
-    - 'railties/test/fixtures/tmp/**/*'
     - 'actionmailbox/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
