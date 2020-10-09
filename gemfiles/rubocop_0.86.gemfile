@@ -4,6 +4,11 @@
 
 source "https://rubygems.org"
 
+gem "appraisal"
+gem "bundler"
+gem "minitest"
+gem "rake"
+gem "rails", ">= 5.0"
 gem "rubocop", "~> 0.86.0"
 
 gemspec path: "../"
