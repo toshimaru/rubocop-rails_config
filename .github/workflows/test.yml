@@ -1,0 +1,31 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        ruby: [2.4, 2.5, 2.6, 2.7]
+        gemfile:
+          - gemfiles/rubocop_0.85.gemfile
+          - gemfiles/rubocop_0.86.gemfile
+          - gemfiles/rubocop_0.87.gemfile
+          - gemfiles/rubocop_0.88.gemfile
+          - gemfiles/rubocop_0.89.gemfile
+          - gemfiles/rubocop_0.90.gemfile
+          - gemfiles/rubocop_0.91.gemfile
+          - gemfiles/rubocop_0.92.gemfile
+          - gemfiles/rubocop_0.93.gemfile
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby ${{ matrix.ruby }}
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+    - name: bundle install
+      run: |
+        bundle install --jobs 4 --retry 3
+    - name: Run Test
+      run: bundle exec rake
