@@ -1,7 +1,7 @@
 # rubocop-rails_config
 
-[![Build Status](https://travis-ci.com/toshimaru/rubocop-rails_config.svg?branch=master)](https://travis-ci.com/toshimaru/rubocop-rails_config)
 [![Gem Version](https://badge.fury.io/rb/rubocop-rails_config.svg)](https://badge.fury.io/rb/rubocop-rails_config)
+![Test](https://github.com/toshimaru/rubocop-rails_config/workflows/Test/badge.svg)
 
 RuboCop configuration which has the same code style checking as official Ruby on Rails.
 
