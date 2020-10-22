@@ -1,1 +1,1 @@
-Changelog is maintained under [Github Releases](https://github.com/toshimaru/rubocop-rails_config/releases).
+Changelog is maintained under [GitHub Releases](https://github.com/toshimaru/rubocop-rails_config/releases).
