@@ -1,5 +1,5 @@
 require:
-  # - rubocop-packaging # Disabled since it requires rubocop v0.89+
+  - rubocop-packaging
   - rubocop-performance
   - rubocop-rails
 
