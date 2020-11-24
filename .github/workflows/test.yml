@@ -10,6 +10,7 @@ jobs:
           - gemfiles/rubocop_1.1.gemfile
           - gemfiles/rubocop_1.2.gemfile
           - gemfiles/rubocop_1.3.gemfile
+          - gemfiles/rubocop_1.4.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
