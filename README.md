@@ -60,7 +60,7 @@ class AssertNotTest < ActiveSupport::TestCase
 end
 ```
 
-See also. [ActiveSupport::TestCase](https://api.rubyonrails.org/classes/ActiveSupport/TestCase.html)
+See also. [ActiveSupport::Testing::Assertions](https://api.rubyonrails.org/classes/ActiveSupport/Testing/Assertions.html)
 
 ## Customization
 
@@ -76,10 +76,10 @@ inherit_gem:
 
 # Override Setting
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
 ```
 
-This overrides `config/rails.yml` setting with `TargetRubyVersion: 2.6`.
+This overrides `config/rails.yml` setting with `TargetRubyVersion: 2.7`.
 
 ## License
 
