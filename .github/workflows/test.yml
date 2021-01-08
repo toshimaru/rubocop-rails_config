@@ -4,7 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: [2.4, 2.5, 2.6, 2.7]
+        ruby: [2.4, 2.5, 2.6, 2.7, 3.0]
         gemfile:
           - gemfiles/rubocop_1.0.gemfile
           - gemfiles/rubocop_1.1.gemfile
@@ -14,13 +14,14 @@ jobs:
           - gemfiles/rubocop_1.5.gemfile
           - gemfiles/rubocop_1.6.gemfile
           - gemfiles/rubocop_1.7.gemfile
+          - gemfiles/rubocop_1.8.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby ${{ matrix.ruby }}
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
     - name: bundle install
