@@ -5,7 +5,7 @@
 
 RuboCop configuration which has the same code style checking as official Ruby on Rails.
 
-[Official RoR RuboCop Configuration](https://github.com/rails/rails/blob/master/.rubocop.yml)
+[Official RoR RuboCop Configuration](https://github.com/rails/rails/blob/main/.rubocop.yml)
 
 ## Installation
 
