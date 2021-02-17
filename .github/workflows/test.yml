@@ -8,6 +8,7 @@ jobs:
         gemfile:
           - gemfiles/rubocop_1.8.gemfile
           - gemfiles/rubocop_1.9.gemfile
+          - gemfiles/rubocop_1.10.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
