@@ -12,6 +12,9 @@ jobs:
           - gemfiles/rubocop_1.11.gemfile
           - gemfiles/rubocop_1.12.gemfile
           - gemfiles/rubocop_1.13.gemfile
+        exclude:
+          - ruby: 2.4
+            gemfile: gemfiles/rubocop_1.13.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
