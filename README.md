@@ -76,10 +76,10 @@ inherit_gem:
 
 # Override Setting
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 ```
 
-This overrides `config/rails.yml` setting with `TargetRubyVersion: 2.7`.
+This overrides `config/rails.yml` setting with `TargetRubyVersion: 3.0`.
 
 ## License
 
