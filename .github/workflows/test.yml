@@ -6,11 +6,6 @@ jobs:
       matrix:
         ruby: [2.5, 2.6, 2.7, 3.0]
         gemfile:
-          - gemfiles/rubocop_1.13.gemfile
-          - gemfiles/rubocop_1.14.gemfile
-          - gemfiles/rubocop_1.15.gemfile
-          - gemfiles/rubocop_1.16.gemfile
-          - gemfiles/rubocop_1.17.gemfile
           - gemfiles/rubocop_1.18.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}

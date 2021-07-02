@@ -51,6 +51,9 @@ Layout/CaseIndentation:
 Layout/ClosingHeredocIndentation:
   Enabled: true
 
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
 # Align comments with method definitions.
 Layout/CommentIndentation:
   Enabled: true
