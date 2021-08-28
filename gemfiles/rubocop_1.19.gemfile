@@ -8,7 +8,7 @@ gem "appraisal"
 gem "bundler"
 gem "minitest"
 gem "rake"
-gem "rails", ">= 6.0"
+gem "rails", ">= 5.2"
 gem "rubocop", "~> 1.19.0"
 
 gemspec path: "../"
