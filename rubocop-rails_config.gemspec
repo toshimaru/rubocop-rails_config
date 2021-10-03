@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                  = "rubocop-rails_config"
-  spec.version               = "1.7.3"
+  spec.version               = "1.7.4"
   spec.summary               = "RuboCop configuration which has the same code style checking as official Ruby on Rails"
   spec.description           = "RuboCop configuration which has the same code style checking as official Ruby on Rails"
   spec.authors               = ["Toshimaru", "Koichi ITO"]
