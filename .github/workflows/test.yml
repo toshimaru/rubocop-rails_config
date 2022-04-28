@@ -1,5 +1,11 @@
 name: Test
-on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 jobs:
   test:
     strategy:
@@ -9,6 +15,7 @@ jobs:
           - gemfiles/rubocop_1.25.gemfile
           - gemfiles/rubocop_1.26.gemfile
           - gemfiles/rubocop_1.27.gemfile
+          - gemfiles/rubocop_1.28.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
