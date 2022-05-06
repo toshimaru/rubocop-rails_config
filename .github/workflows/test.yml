@@ -10,12 +10,9 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: ['2.5', '2.6', '2.7', '3.0', '3.1']
+        ruby: ['2.6', '2.7', '3.0', '3.1']
         gemfile:
-          - gemfiles/rubocop_1.25.gemfile
-          - gemfiles/rubocop_1.26.gemfile
-          - gemfiles/rubocop_1.27.gemfile
-          - gemfiles/rubocop_1.28.gemfile
+          - gemfiles/rubocop_1.29.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
