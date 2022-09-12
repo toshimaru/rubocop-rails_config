@@ -326,5 +326,8 @@ Performance/RedundantStringChars:
 Performance/StringInclude:
   Enabled: true
 
+Minitest/AssertRaisesWithRegexpArgument:
+  Enabled: true
+
 Minitest/UnreachableAssertion:
   Enabled: true
