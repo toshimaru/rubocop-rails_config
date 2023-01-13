@@ -15,6 +15,8 @@ jobs:
           - gemfiles/rubocop_1.39.gemfile
           - gemfiles/rubocop_1.40.gemfile
           - gemfiles/rubocop_1.41.gemfile
+          - gemfiles/rubocop_1.42.gemfile
+          - gemfiles/rubocop_1.43.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
