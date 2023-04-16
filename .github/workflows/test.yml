@@ -12,13 +12,9 @@ jobs:
       matrix:
         ruby: ['2.6', '2.7', '3.0', '3.1', '3.2']
         gemfile:
-          - gemfiles/rubocop_1.39.gemfile
-          - gemfiles/rubocop_1.40.gemfile
-          - gemfiles/rubocop_1.41.gemfile
-          - gemfiles/rubocop_1.42.gemfile
-          - gemfiles/rubocop_1.43.gemfile
-          - gemfiles/rubocop_1.44.gemfile
-          - gemfiles/rubocop_1.45.gemfile
+          - gemfiles/rubocop_1.48.gemfile
+          - gemfiles/rubocop_1.49.gemfile
+          - gemfiles/rubocop_1.50.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
