@@ -23,7 +23,7 @@ task :rails_test do
     # offenses(StringLiterals, FrozenStringLiteralComment).
     #
     # Run rubocop and check there are no offenses except those rules.
-    sh "rubocop --format tap --except=#{EXCEPT_COPS.join(",")} ."
+    sh "rubocop --except=#{EXCEPT_COPS.join(",")} ."
   end
   rm_rf RAILS_TEST_DIR
 end
