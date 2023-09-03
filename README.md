@@ -35,8 +35,6 @@ $ rails generate rubocop_rails_config:install
 
 ### TargetRubyVersion
 
-Although Rails 7 (edge) only supports Ruby 2.7 or more, rubocop-rails_config still supports Ruby 2.6 or more to support as many Ruby versions as possible.
-
 If you'd like to change `TargetRubyVersion`, see [Customization](#customization).
 
 ### Rails/AssertNot, Rails/RefuteMethods
