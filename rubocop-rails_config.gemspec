@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.files                 = Dir["README.md", "LICENSE", "config/*.yml", "lib/**/*"]
   spec.homepage              = "https://github.com/toshimaru/rubocop-rails_config"
   spec.license               = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.add_dependency "rubocop", ">= 1.48.0"
   spec.add_dependency "rubocop-ast", ">= 1.26.0"
