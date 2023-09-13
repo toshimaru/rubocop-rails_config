@@ -14,7 +14,10 @@ RuboCop::RakeTask.new
 
 task :rails_test do
   RAILS_TEST_DIR = "rails_test"
-  EXCEPT_COPS = ["Style/StringLiterals", "Style/FrozenStringLiteralComment"].freeze
+
+  # TODO: By using Rails that includes https://github.com/rails/rails/pull/49247,
+  #       the specification for 'Layout/EmptyLinesAroundBlockBody' becomes unnecessary.
+  EXCEPT_COPS = ["Layout/EmptyLinesAroundBlockBody", "Style/StringLiterals", "Style/FrozenStringLiteralComment"].freeze
 
   sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install"
   cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
