@@ -240,6 +240,9 @@ Lint/EnsureReturn:
 Lint/RequireParentheses:
   Enabled: true
 
+Lint/RedundantSafeNavigation:
+  Enabled: true
+
 Lint/RedundantStringCoercion:
   Enabled: true
 
