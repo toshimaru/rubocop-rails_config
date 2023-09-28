@@ -3,7 +3,6 @@ require:
   - rubocop-packaging
   - rubocop-performance
   - rubocop-rails
-  - rubocop-md
 
 AllCops:
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
@@ -16,15 +15,8 @@ AllCops:
     - '**/vendor/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
     - 'actionmailbox/test/dummy/**/*'
-    - 'activestorage/test/dummy/**/*'
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
-    - '**/CHANGELOG.md'
-    - '**/2_*_release_notes.md'
-    - '**/3_*_release_notes.md'
-    - '**/4_*_release_notes.md'
-    - '**/5_*_release_notes.md'
-    - '**/6_*_release_notes.md'
     # Additional exclude files by rubocop-rails_config
     - 'bin/**/*'
     - 'db/schema.rb'
@@ -111,8 +103,6 @@ Style/HashSyntax:
 Layout/IndentationConsistency:
   Enabled: true
   EnforcedStyle: indented_internal_methods
-  Exclude:
-    - '**/*.md'
 
 # Two spaces, no tabs (for indentation).
 Layout/IndentationWidth:
@@ -170,7 +160,6 @@ Style/FrozenStringLiteralComment:
     - 'activestorage/db/update_migrate/**/*.rb'
     - 'actionmailbox/db/migrate/**/*.rb'
     - 'actiontext/db/migrate/**/*.rb'
-    - '**/*.md'
 
 Style/MapToHash:
   Enabled: true
@@ -362,9 +351,3 @@ Minitest/SkipEnsure:
 
 Minitest/UnreachableAssertion:
   Enabled: true
-
-Markdown:
-  # Whether to run RuboCop against non-valid snippets
-  WarnInvalid: false
-  # Whether to lint codeblocks without code attributes
-  Autodetect: false
