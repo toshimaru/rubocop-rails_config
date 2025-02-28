@@ -1,6 +1,8 @@
 require:
-  - rubocop-minitest
   - rubocop-packaging
+  
+plugins:
+  - rubocop-minitest
   - rubocop-performance
   - rubocop-rails
   - rubocop-md
