@@ -9,6 +9,6 @@ gem "bundler"
 gem "minitest"
 gem "rake"
 gem "rails", ">= 5.2"
-gem "rubocop", "~> 1.63.0"
+gem "rubocop", "~> 1.72.0"
 
 gemspec path: "../"
