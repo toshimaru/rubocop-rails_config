@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop-ast", ">= 1.38.0"
   spec.add_dependency "rubocop-md"
   spec.add_dependency "rubocop-minitest", "~> 0.37"
-  spec.add_dependency "rubocop-packaging", "~> 0.5"
+  spec.add_dependency "rubocop-packaging", "~> 0.6"
   spec.add_dependency "rubocop-performance", "~> 1.24"
   spec.add_dependency "rubocop-rails", "~> 2.30"
 end
