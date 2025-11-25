@@ -28,6 +28,8 @@ AllCops:
     # Additional exclude files by rubocop-rails_config
     - 'bin/**/*'
     - 'db/schema.rb'
+    - 'db/queue_schema.rb'
+    - 'db/cache_schema.rb'
 
 Performance:
   Exclude:
