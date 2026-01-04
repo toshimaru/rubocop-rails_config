@@ -19,7 +19,7 @@ task :rails_test do
   #       the specification for 'Layout/EmptyLinesAroundBlockBody' becomes unnecessary.
   EXCEPT_COPS = ["Layout/EmptyLinesAroundBlockBody", "Style/StringLiterals", "Style/FrozenStringLiteralComment"].freeze
 
-  sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install"
+  sh "rails new #{RAILS_TEST_DIR} --skip-webpack-install --skip-kamal"
   cp "./test/fixture/.rubocop.yml", "#{RAILS_TEST_DIR}/.rubocop.yml"
   cd RAILS_TEST_DIR do
     # Rails generates files which have some rubocop
