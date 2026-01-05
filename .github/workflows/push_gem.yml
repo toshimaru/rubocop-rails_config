@@ -1,0 +1,35 @@
+name: Publish gem to rubygems.org
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  push:
+    if: github.repository == 'toshimaru/rubocop-rails_config'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: ruby
+
+      - name: Publish to RubyGems
+        uses: rubygems/release-gem@v1
+
+      - name: Create GitHub Release
+        run: gh release create ${{ github.ref_name }} --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
