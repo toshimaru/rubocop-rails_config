@@ -1,9 +1,7 @@
 name: Publish gem to rubygems.org
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: read
