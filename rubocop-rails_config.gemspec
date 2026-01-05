@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage              = "https://github.com/toshimaru/rubocop-rails_config"
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
+  spec.metadata              = { "rubygems_mfa_required" => "true" }
 
   spec.add_dependency "rubocop", ">= 1.72.2"
   spec.add_dependency "rubocop-ast", ">= 1.38.0"
