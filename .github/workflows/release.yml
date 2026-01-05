@@ -1,9 +1,7 @@
 name: Publish gem to rubygems.org
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,6 +23,6 @@ jobs:
       - name: Publish to RubyGems
         uses: rubygems/release-gem@v1
       - name: Create GitHub Release
-        run: gh release create ${{ github.ref_name }} --generate-notes
+        run: gh release create "$(git describe --tags --abbrev=0)" --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
