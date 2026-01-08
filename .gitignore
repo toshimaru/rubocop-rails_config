@@ -11,3 +11,5 @@
 *.gemfile.lock
 
 /rails_test
+/vendor/bundle/
+/.bundle/config
