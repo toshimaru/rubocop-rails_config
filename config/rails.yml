@@ -1,9 +1,11 @@
+require:
+  - rubocop-md
+
 plugins:
   - rubocop-minitest
   - rubocop-packaging
   - rubocop-performance
   - rubocop-rails
-  - rubocop-md
 
 AllCops:
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
@@ -330,9 +332,6 @@ Performance/ReverseEach:
   Enabled: true
 
 Performance/StringReplacement:
-  Enabled: true
-
-Performance/UnfreezeString:
   Enabled: true
 
 Performance/DeletePrefix:
