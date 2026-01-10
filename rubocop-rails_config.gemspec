@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.7.0"
   spec.metadata              = { "rubygems_mfa_required" => "true" }
 
-  spec.add_dependency "rubocop", ">= 1.73.0"
+  spec.add_dependency "rubocop", ">= 1.74.0"
   spec.add_dependency "rubocop-ast", ">= 1.38.0"
   spec.add_dependency "rubocop-md"
   spec.add_dependency "rubocop-minitest", "~> 0.37"
