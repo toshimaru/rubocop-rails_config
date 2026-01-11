@@ -19,9 +19,7 @@ bundle exec appraisal rake  # run matrix if changing RuboCop deps
 ```
 
 ## Coding Style
-- Ruby, 2-space indent; keep `# frozen_string_literal: true` where used.
-- Honor cops in `config/rails.yml` (Rails assertions, `&&/||`, aligned `when`/`end`, etc.).
-- Snake_case filenames and generator names; favor small, imperative methods.
+- Honor cops in `config/rails.yml`
 - Run RuboCop before shipping changes.
 
 ## Testing
