@@ -353,7 +353,7 @@ Performance/RedundantStringChars:
 Performance/StringInclude:
   Enabled: true
 
-Minitest/AssertPredicate:
+Minitest/AssertNil:
   Enabled: true
 
 Minitest/AssertRaisesWithRegexpArgument:
@@ -363,6 +363,9 @@ Minitest/AssertWithExpectedArgument:
   Enabled: true
 
 Minitest/LiteralAsActualArgument:
+  Enabled: true
+
+Minitest/NonExecutableTestMethod:
   Enabled: true
 
 Minitest/SkipEnsure:
