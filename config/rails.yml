@@ -226,6 +226,11 @@ Lint/AmbiguousOperator:
 Lint/AmbiguousRegexpLiteral:
   Enabled: true
 
+Lint/Debugger:
+  Enabled: true
+  DebuggerRequires:
+    - debug
+
 Lint/DuplicateRequire:
   Enabled: true
 
