@@ -256,6 +256,9 @@ Lint/RedundantSafeNavigation:
 Lint/RedundantStringCoercion:
   Enabled: true
 
+Lint/RedundantRequireStatement:
+  Enabled: true
+
 Lint/UriEscapeUnescape:
   Enabled: true
 
