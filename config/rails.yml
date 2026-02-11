@@ -253,10 +253,10 @@ Lint/RequireParentheses:
 Lint/RedundantSafeNavigation:
   Enabled: true
 
-Lint/RedundantStringCoercion:
+Lint/RedundantRequireStatement:
   Enabled: true
 
-Lint/RedundantRequireStatement:
+Lint/RedundantStringCoercion:
   Enabled: true
 
 Lint/UriEscapeUnescape:
