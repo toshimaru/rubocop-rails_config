@@ -1,5 +1,6 @@
 ---
-description: Compare upstream Rails .rubocop.yml with local config/rails.yml
+name: check-config-diff
+description: Compare upstream Rails .rubocop.yml with local config/rails.yml. Use when the user wants to check differences between the upstream Rails RuboCop configuration and this repository's config/rails.yml.
 allowed-tools: WebFetch, Read
 ---
 
