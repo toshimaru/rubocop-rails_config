@@ -321,6 +321,9 @@ Style/OpenStructUse:
 Style/ArrayIntersect:
   Enabled: true
 
+Style/KeywordArgumentsMerging:
+  Enabled: true
+
 Performance/BindCall:
   Enabled: true
 
