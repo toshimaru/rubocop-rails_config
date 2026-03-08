@@ -1,1 +1,0 @@
-../../../.agents/skills/why-this-change/SKILL.md
