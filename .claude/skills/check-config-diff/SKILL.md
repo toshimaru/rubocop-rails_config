@@ -1,1 +1,0 @@
-../../../.agents/skills/check-config-diff/SKILL.md
