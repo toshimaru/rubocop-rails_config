@@ -243,6 +243,17 @@ Lint/ErbNewArguments:
 Lint/EnsureReturn:
   Enabled: true
 
+# Keep rubocop:disable/enable directives properly paired (rails/rails@8b4e92f)
+# https://github.com/rails/rails/commit/8b4e92f4be4af6d39c20aa93ebd1e5561308e36b#diff-4f894049af3375c2bd4e608f546f8d4a0eed95464efcdea850993200db9fef5c
+Lint/MissingCopEnableDirective:
+  Enabled: true
+
+Lint/RedundantCopDisableDirective:
+  Enabled: true
+
+Lint/RedundantCopEnableDirective:
+  Enabled: true
+
 Lint/NestedMethodDefinition:
   Enabled: true
 
